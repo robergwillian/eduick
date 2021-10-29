@@ -1,0 +1,48 @@
+.bannerWrapper {
+  width: 1140px;
+  height: 235px;
+  background: #ffffff;
+  margin-top: 30px;
+  display: flex;
+}
+
+.fireDetail {
+  left: -50px;
+  top: 40px;
+  position: relative;
+}
+
+.bannerText {
+  max-width: 521px;
+  padding-top: 42px;
+
+  p:first-child {
+    font-size: 21px;
+    font-family: Poppins;
+    line-height: 160%;
+    color: #200e64;
+
+    span {
+      font-weight: 700;
+    }
+
+    i {
+        color:var(--btn-primary);
+        font-size:36px;
+    }
+  }
+
+  p:nth-child(2) {
+    color: #343434;
+    font-family: 'Open Sans', san-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    margin-top:30px;
+  }
+}
+
+.bannerStudents{
+    padding-top:34px;
+    margin-left:80px;
+}
