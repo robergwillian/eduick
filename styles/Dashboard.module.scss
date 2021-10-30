@@ -1,9 +1,25 @@
 .dashboardFull{
     background: var(--admin-bg);
     min-height: 100vh;
+    margin-bottom:10px;
 }
 
 .dashboardContainer {
     width: 1140px;
     margin:0 auto;
+}
+
+
+.courseContainer{
+    width:1140px;
+    margin:30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    span{
+        margin: 0px auto 10px;
+    }
 }

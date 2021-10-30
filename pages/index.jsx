@@ -65,7 +65,14 @@ export default function Home() {
                 >
                   I'M A STUDENT
                 </button>
-                <button onClick={(e) => { e.preventDefault();}} className={styles.searchButton}>SEARCH</button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                  className={styles.searchButton}
+                >
+                  SEARCH
+                </button>
               </div>
             </form>
           </section>
