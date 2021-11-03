@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Modal from "../loginModal";
-import GetStartedModal from "../getStartedModal";
 import styles from "./styles.module.scss";
 import { MdClose } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";

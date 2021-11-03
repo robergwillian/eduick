@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import {MdClose} from 'react-icons/md'
 import styles from "./styles.module.scss";
+import {BiRightArrowAlt} from 'react-icons/bi'
 
-
-export default function GetStartedModal({show, onClose, children}) {
+export default function Modal({show, onClose}) {
 
   const [isBrowser, setIsBrowser] = useState(false);
   
@@ -18,19 +18,16 @@ export default function GetStartedModal({show, onClose, children}) {
       };
 
   const modalContent = show ? (
-      <div className={styles.ModalOverlay}>
-        <div className={styles.Modal}>
-            <p className={styles.formHeader1}>
-                Get Started
-                <br />
-                <span>JUST LOGIN</span>
-            </p>
-            <div className={styles.closeModal}>
-                <a href="#" onClick={handleClose}>
-                <MdClose size='28' color="white" /> 
-                </a>
+      <div onClick={handleClose}className={styles.DashboardModalOverlay}>
+        <div className={styles.DashboardModal}>
+          <div className={styles.DashboardModalHeader}>
+            <div className={styles.DashboardModalHeaderText}>
+                <p>CHANGE TO TEACHER MODE</p>
             </div>
-          <div className={styles.ModalBody1}>{children}</div>
+            <div className={styles.DashboardModalHeaderIcon}>
+                <i><BiRightArrowAlt color="gray" height='14'width='18'/></i>
+            </div>
+          </div>
         </div>
       </div>
     ) : null;
