@@ -109,7 +109,7 @@ export default function Header() {
                 <label>Username:</label>
                 <input type="text" />
 
-                  <label>Password:</label>
+                <label>Password:</label>
                 <div className={styles.passWrapper}>
                   <input type={passwordShown ? "text" : "password"} />
                   <i>
@@ -122,7 +122,14 @@ export default function Header() {
                 </div>
               </div>
               <div>
-                <button>Login</button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "/dashboard";
+                  }}
+                >
+                  Login
+                </button>
               </div>
             </div>
           </div>
