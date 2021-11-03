@@ -109,8 +109,8 @@ export default function Header() {
                 <label>Username:</label>
                 <input type="text" />
 
-                <div className={styles.passWrapper}>
                   <label>Password:</label>
+                <div className={styles.passWrapper}>
                   <input type={passwordShown ? "text" : "password"} />
                   <i>
                     <AiOutlineEye
