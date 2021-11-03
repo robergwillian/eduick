@@ -2,6 +2,8 @@
 
 ### Technical test made with NEXTjs
 
+access http://eduick-seven.vercel.app/ to see it live, clicking on the get started button will open login modal, dont need to put any crendentials, clicking on the login button will take you the mockup dashboard area
+
 
 
 ## Getting Started
