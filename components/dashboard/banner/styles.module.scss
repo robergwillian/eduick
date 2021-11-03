@@ -46,3 +46,30 @@
     padding-top:34px;
     margin-left:80px;
 }
+
+@media (max-width: 768px) {
+
+  .bannerWrapper {
+    width: 90%;
+    height: 235px;
+    background: #ffffff;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding:21px;
+  }
+
+  .bannerStudents{
+    display: none;
+  }
+  
+  .bannerText{
+    padding-top:0px;
+  }
+
+  .fireDetail {
+    left: 0;
+    top:-40px;
+  }
+
+}

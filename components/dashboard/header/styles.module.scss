@@ -47,7 +47,7 @@
     align-items: center;
     
     
-    button {
+    .teacherModeButton {
         width: 186px;
         height: 34px;
         background:url("../../../public/btn-bg.png");
@@ -71,5 +71,56 @@
 
     img {
         width:34px;
+    }
+
+    .dropDownMenu {
+        
+        button{
+            background:none;
+            border:none;
+            outline: none;
+        }
+        i{
+            display: none;
+        }
+      }
+}
+
+
+@media (max-width: 768px) {
+
+    .headerContainer{
+        width:90%;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        nav {
+            display: none;
+        }
+    }
+
+    .headerProfile {
+
+        .dropDownMenu {
+        
+            button{
+                background:none;
+                border:none;
+                outline: none;
+                cursor: pointer;
+            }
+            i{
+                display: block;
+                margin-right: 10px;
+            }
+          }
+
+        .teacherModeButton{
+            display: none;
+        }
     }
 }

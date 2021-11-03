@@ -54,3 +54,28 @@
   color: #200e64;
   margin-top:16px;
 }
+
+
+@media (max-width:768px){
+
+  .cardContainer {
+    width: 100%;
+    padding:20px;
+    height: auto;
+    
+    
+    .cardImage {
+      width:100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .cardTitle {
+      margin-bottom:10px;
+    }
+
+  }
+
+}

@@ -1,7 +1,7 @@
 .Full{
   background: url("../public/background1.png");
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   height: 100vh;
   width: 100vw;
 }
@@ -101,14 +101,8 @@
     color: #ffffff;
     margin-right: 20px;
     padding-left: 35px;
+    cursor: pointer;
 
-    &:hover {
-      background: #7955e8;
-      background-image: url("../public/checked.png");
-      background-position: 15px 16px;
-      background-repeat: no-repeat;
-      border: 1px solid #a68eef;
-    }
   }
 
   .active {
@@ -138,7 +132,12 @@
   }
 }
 
+
+
 @media (min-width: 1201px) {
+
+
+  
   .searchField {
     max-width: 525px;
   }
@@ -158,6 +157,10 @@
 }
 
 @media (max-width: 700px) {
+  .Full{
+    height:auto;
+  }
+  
   .contentContainer {
     flex-direction: column-reverse;
     padding: 70px 1px 0;
@@ -167,8 +170,7 @@
 
   .hero {
     img {
-      width: 290px;
-      height:450px;
+      height:500px;
     }
   }
 
@@ -179,7 +181,7 @@
     .formHeader {
       font-size: 28px;
       font-weight: 400;
-      line-height: 33px;
+      line-height: 33px;  
       margin-bottom: 60px;
     }
   }
@@ -198,10 +200,16 @@
       height: 48px;
       font-size: 10px;
       margin: 0 0 16px 0;
+
+
     }
 
     .active {
-      background-position: 16px;
+      background: #7955e8;
+      background-image: url("../public/checked.png");
+      background-position: 18px;
+      background-repeat: no-repeat;
+      border: 1px solid #a68eef;
     }
 
     .searchButton {

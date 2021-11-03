@@ -18,8 +18,8 @@ export default function Modal({show, onClose, children}) {
       };
 
   const modalContent = show ? (
-      <div className={styles.ModalOverlay}>
-        <div className={styles.Modal}>
+      <div onClick={handleClose}className={styles.ModalOverlay}>
+        {/* <div className={styles.Modal}>
           <div className={styles.ModalHeader}>
             <img src="logo.svg" alt="Logo EDUICK" />
             <a href="#" onClick={handleClose}>
@@ -27,7 +27,8 @@ export default function Modal({show, onClose, children}) {
             </a>
           </div>
           <div className={styles.ModalBody}>{children}</div>
-        </div>
+        </div> */}
+        {children}
       </div>
     ) : null;
 
